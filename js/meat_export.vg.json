@@ -1,17 +1,15 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 500,
-    "title": "Australia meat exports",
-    "projection": {"type": "equalEarth"},
-    "layer": [
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/js/meat_export.geo_1.topojson?token=ANJOVWGCFBI6LJRGDAJRZTDBNSEGI",
-          "format": {"type": "topojson", "feature": "meat_export.geo_1"}
-        },
-        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
-      }
-      
-    ]
-  }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "title": "Australia Meat Exports",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/js/meat_export.geo_1.topojson?token=ANJOVWA4U4WAK4PRQOC5VSLBNSTEQn",
+        "format": {"type": "topojson", "feature": "meat_export.geo_1"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    
+    }]}
