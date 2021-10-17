@@ -3,13 +3,13 @@
   "width": 800,
   "height": 500,
   "title": "Australia Meat Exports",
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "equirectangular"},
   "layer": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/js/meat_export.geo_1.topojson?token=ANJOVWA4U4WAK4PRQOC5VSLBNSTEQn",
         "format": {"type": "topojson", "feature": "meat_export.geo_1"}
       },
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "grey"}
     
     }]}
