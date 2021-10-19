@@ -1,0 +1,63 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": 600,
+ "height": 300,
+ "title": "Lamb exported from Australia",
+ "data": {
+ "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/Data/Australia_Lamb_exports%20_2011_2021.csv"
+ },
+ "params": [
+   {
+     "name": "lamb_exported_high",
+     "value": 0,
+     "bind":{
+       "input": "range",
+       "min": 0,
+       "max":1000,
+       "step":100,
+       "name": "minimum lamb exported"
+      
+     }
+   }
+ ],
+ "transform": [
+   {"filter": "datum.lamb_exported > lamb_exported_high"}
+ ],
+ "selection":{
+   "country_highlight":{
+     "type": "multi",
+     "fields":["Country"],
+     "bind": "legend"
+   }
+ },
+ "mark": "line",
+ "encoding": {
+ "x": {
+ "field": "Year",
+ "type": "temporal",
+ "title": "Time (years)"
+ },
+ "y": {
+ "field": "lamb_exported",
+ "type": "quantitative",
+ "title":"Lamb exported (Tonns)",
+ "scale":{"range":[0,300],"domain":[6000,0]}
+ },
+ "color": {
+ "field": "Country",
+ "type": "nominal"
+ },
+ "opacity":{
+   "condition": {
+     "selection": "country_highlight", "value": 1}, "value":0.1
+ },
+ 
+ "tooltip": [
+   {"field": "Country", "type": "nominal"},
+   {"field": "lamb_exported","type": "quantitative","title":"Lamb exported(Tonns)"},
+   {"field":"Year", "type": "temporal"}
+ ]
+ 
+ 
+ }
+}
