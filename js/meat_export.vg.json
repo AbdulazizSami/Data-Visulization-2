@@ -37,17 +37,20 @@
 
 
 
-      "mark": {"type":"circle","tooltip":{"content":"data"}},
-      "encoding":{
-       "longitude": {"field": "longitude", "type": "quantitative"},
-        "latitude": {"field": "latitude", "type": "quantitative"},
-
-
-
-           "size":{
-          "field":"beef_exported",
-          "type":"quantitative",
-          "scale":{"domain":[10000,20000]}}
+      "mark": {
+    "type": "geoshape"
+    },
+  "encoding": {
+    "color": {
+      "field": "beef_exported",
+      "type": "quantitative"
+     
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "country"},
+      {"field": "Year", "type": "temporal"}
+    ]
+  }
 
 
 
