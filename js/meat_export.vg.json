@@ -46,10 +46,9 @@
        
            "size":{
           "field":"beef_exported",
-          "type":"ordinal",
-          "scale":{"domain":[200,1000,20000]}},
-         
-          "color":{"field":"country", "type":"ordinal","scale":{"scheme":"accent"}}
+          "type":"quantitative",
+          "scale":{"domain":[200,20000]}}
+     }
           
           
          
