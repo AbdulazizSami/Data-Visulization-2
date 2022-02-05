@@ -1,4 +1,3 @@
- {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 500,
@@ -20,10 +19,10 @@
   "layer": [
     {
       "data": {
- "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/js/meat_export.geo_1.topojson",
- "format": {"type": "topojson", "feature": "meat_export.geo_1"}
+        "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/js/meat_export.geo_1.topojson",
+        "format": {"type": "topojson", "feature": "meat_export.geo_1"}
       },
-"mark": {"type": "geoshape", "fill": "lightgray", "stroke": "grey"}},
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "grey"}},
       {
         "data":{
           "url":"https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/Data/Australia_Beef_exports_2011_2021.csv"
@@ -44,12 +43,11 @@
 
 
 
-         "size":{
- "field":"beef_exported",
- "type":"quantitative",
- "scale":{"domain":[10,20000]}}
+           "size":{
+          "field":"beef_exported",
+          "type":"quantitative",
+          "scale":{"domain":[10000,20000]}}
 
-          "color":{"field":"country", "type":"ordinal","scale":{"scheme":"accent"}}
 
 
 
