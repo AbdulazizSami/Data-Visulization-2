@@ -1,4 +1,3 @@
-{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 500,
@@ -37,20 +36,20 @@
 
 
 
-      "mark": {
-    "type": "geoshape"
-    },
-  "encoding": {
-    "color": {
-      "field": "beef_exported",
-      "type": "quantitative"
-     
-    }}
+      "mark": {"type":"circle","tooltip":{"content":"data"}},
+      "encoding":{
+       "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+
+
+
+           "size":{
+          "field":"beef_exported",
+          "type":"quantitative",
+          "scale":{"domain":[10000,20000]}}
 
 
 
 
+      }}
 
-
-
-  }}]}
