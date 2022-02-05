@@ -29,8 +29,8 @@
           "url":"https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/Data/Australia_Beef_exports_2011_2021.csv"
         },
         "transform":[{"filter": "datum.Year == Year_selection"}],
-     
- 
+
+
 
 
 
@@ -41,18 +41,18 @@
       "encoding":{
        "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
-         
-        
-       
+
+
+
            "size":{
           "field":"beef_exported",
           "type":"quantitative",
-          "scale":{"range":[2000,20000]}}
-     
-          
-          
-         
-        
-      
-      
+          "scale":{"domain":[100,25000]}}
+
+
+
+
+
+
+
   }}]}
