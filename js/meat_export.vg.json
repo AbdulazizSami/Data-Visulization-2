@@ -45,12 +45,7 @@
       "field": "beef_exported",
       "type": "quantitative"
      
-    },
-    "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "country"},
-      {"field": "Year", "type": "temporal"}
-    ]
-  }
+    }}
 
 
 
