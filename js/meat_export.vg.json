@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": 700,
   "height": 500,
-  "title": "Australia Meat Exports",
+  "title": {"fontSize":24, "text":"Australia Meat Exports"},
+  
   "params": [
  {
  "name": "Year_selection",
