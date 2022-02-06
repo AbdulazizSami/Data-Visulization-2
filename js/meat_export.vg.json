@@ -47,9 +47,9 @@
            "size":{
           "field":"beef_exported",
           "type":"ordinal",
-          "scale":{"domain":[100,2000]}},
+          "scale":{"domain":[100,2000]}}
          
-          "color":{"field":"country", "type":"ordinal","scale":{"scheme":"accent"}}
+        
           
           
          
