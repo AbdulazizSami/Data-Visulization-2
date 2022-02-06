@@ -37,20 +37,31 @@
 
 
 
-      "mark": {"type":"circle","tooltip":{"content":"data"}},
+      "mark":"circle",
+    
+    
       "encoding":{
        "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
          
-        
+      
        
            "size":{
           "field":"beef_exported",
           "type":"quantitative",
-          "scale":{"domain":[10,2000]}}
+          "scale":{"domain":[10,2000]}},
+          "tooltip": [
+            {"field": "country", "type": "nominal","title":"Country"},
+            {"field": "beef_exported", "type": "quantitative", "title":"Beef Exported (Tonns)"},
+            {"field": "Year", "type": "quantitative"}
+            
+          ]
+          
+          
          
       }
-          
+      
+    
           
          
         
