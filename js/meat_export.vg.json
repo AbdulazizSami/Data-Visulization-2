@@ -47,7 +47,7 @@
            "size":{
           "field":"beef_exported",
           "type":"ordinal",
-          "scale":{"domain":[1000,20000]}}
+          "scale":{"range":[1000,20000]}}
          
       }
           
