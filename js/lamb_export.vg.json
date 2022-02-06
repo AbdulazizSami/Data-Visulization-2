@@ -2,7 +2,7 @@
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "width": 600,
  "height": 300,
- "title": "Lamb exported from Australia",
+ "title": {"fontSize":24,"text":"Lamb exported from Australia"},
  "data": {
  "url": "https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/Data/Australia_Lamb_exports%20_2011_2021.csv"
  },
