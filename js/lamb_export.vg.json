@@ -45,7 +45,8 @@
  },
  "color": {
  "field": "Country",
- "type": "nominal"
+ "type": "nominal",
+ "scale": {"domain":["Bahrain","China", "Japan", "Jordan", "Malaysia", "Papua New Guinea", "Qatar", "UAE", "US", "United Kingdom"], "range": ["#61E5F0", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628", "#FE00E7", "#1B00FE","#1D1B31","#141414"]}
  },
  "opacity":{
    "condition": {
