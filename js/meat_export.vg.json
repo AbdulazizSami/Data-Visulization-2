@@ -1,3 +1,4 @@
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 500,
@@ -28,8 +29,8 @@
           "url":"https://raw.githubusercontent.com/AbdulazizSami/Data-Visulization-2/main/Data/Australia_Beef_exports_2011_2021.csv"
         },
         "transform":[{"filter": "datum.Year == Year_selection"}],
-
-
+     
+ 
 
 
 
@@ -40,18 +41,19 @@
       "encoding":{
        "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
-
-
-
+         
+        
+       
            "size":{
           "field":"beef_exported",
           "type":"quantitative",
-          "scale":{"domain":[10000,20000]}}
-
-
-
-
-
-
-
-  }}]
+          "scale":{"domain":[200,1000,20000]}},
+         
+          "color":{"field":"country", "type":"ordinal","scale":{"scheme":"accent"}}
+          
+          
+         
+        
+      
+      
+  }}]}
