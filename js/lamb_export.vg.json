@@ -1,6 +1,6 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- "width": 750,
+ "width": 700,
  "height": 300,
  "title": {"fontSize":24,"text":"Lamb exported from Australia"},
  "data": {
@@ -30,7 +30,7 @@
      "bind": "legend"
    }
  },
- "mark": "line",
+ "mark": "area",
  "encoding": {
  "x": {
  "field": "Year",
@@ -41,7 +41,7 @@
  "field": "lamb_exported",
  "type": "quantitative",
  "title":"Lamb exported (Tonns)",
- "scale":{"range":[0,300],"domain":[6000,0]}
+ "scale":{"range":[0,300],"domain":[18000,0]}
  },
  "color": {
  "field": "Country",
